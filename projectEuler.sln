@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{677387C3-1156-45C1-BB4E-62B083C40B75}"
+	ProjectSection(SolutionItems) = preProject
+		app\index.html = app\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{D4A3C756-282D-4F5A-BCD3-37795E494FA2}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\file-manage.js = app\scripts\file-manage.js
+		app\scripts\triangle.js = app\scripts\triangle.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4A3C756-282D-4F5A-BCD3-37795E494FA2} = {677387C3-1156-45C1-BB4E-62B083C40B75}
+	EndGlobalSection
+EndGlobal

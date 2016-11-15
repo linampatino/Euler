@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Lina Marcela Patino Pineda</title>
+</head>
+
+<body>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-12">
+                    <h1>Lina Marcela Patino Pineda</h1>
+                    <h2>linampatino@gmail.com</h2>
+                    <h2>https://github.com/linampatino</h2>
+                    <hr />
+                    <p>
+                        Project Euler <br />
+                        Maximum path sum I <br />
+                        Problem 18
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            <div class="col-xs-12 col-sm-12 ">
+               <div class="row">
+                    <label class="col-sm-2 control-label">Select a File</label>
+                    <div class="col-sm-4">
+                        <input btn btn-primary type="file" id="fileInput" name="fileInput" onchange="readFile(this.files)" />
+                        <button id="clear" style="display:none" class="btn btn-primary" onclick="clearForm()">Clear</button>
+                        <p class="help-block">Select the file that contains the triangle that you wants to find de maximum path .</p>
+
+                    </div>
+                   
+                   
+                   <div class="col-sm-6">
+                       <div class="row">
+                           <label class="col-sm-3 control-label">Maximun Sum</label>
+                           <label id="sum" class="col-sm-3 control-label"></label>
+                       </div>
+                       <div class="row">
+                           <div>
+                               <label class="col-sm-3 control-label">Maximun Path</label>
+                               <label id="path" class="col-sm-3 control-label"></label>
+                           </div>
+                       </div>
+                   </div>
+                    
+               </div>
+                 
+                <div id="textTriangle" class="row">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <p id="errorTriangle" class="help-block"></p>
+                        <textarea id="fileOutput" rows="15" cols="50" required></textarea>
+                    </div>
+                </div>
+                
+                <div class="row ">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                        <button id="execute" class="btn btn-primary btn-block" onclick="maximumPath(fileOutput.value)">Execute</button>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                </div>
+
+        </div>        
+    </div>
+
+
+
+    <script src="../app/scripts/triangle.js"></script>
+    <script src="../app/scripts/file-manage.js"></script>
+
+</body>
+
+</html>
+
